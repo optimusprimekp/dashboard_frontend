@@ -1,5 +1,4 @@
-import { BrowserRouter, Route, Routes as Routess } from "react-router-dom";
-import { createBrowserHistory } from "history";
+import { HashRouter, Route, Routes as Routess } from "react-router-dom";
 // import { useSelector } from "react-redux";
 
 //#start region Admin
@@ -56,15 +55,9 @@ import OtherReport from "../container/admin/pages/reports/OtherReport";
 import WeatherView from "../container/admin/pages/monitoring/WeatherView";
 import RowManagementList from "../container/admin/pages/rowManagement/RowManagementList";
 import BlockLevelMap from "../container/admin/pages/blockManagement/BlockLevelMap";
-const history = createBrowserHistory();
 export default function Routes() {
-  // const login = useSelector((state) => {
-  //   return state.AdminReducer.isAdminLogin
-  // });
-  // const login = true;
-
   return (
-    <BrowserRouter history={history}>
+    <HashRouter>
       <Routess>
         <Route path="/" element={<Login />} />
         <Route path="forgot-password" element={<ForgotPassword />} />
@@ -141,6 +134,6 @@ export default function Routes() {
 
         {/* end user routes */}
       </Routess>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

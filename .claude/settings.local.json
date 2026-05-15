@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(node *)",
+      "Bash(tasklist /FI \"IMAGENAME eq electron.exe\")",
+      "PowerShell(Get-Process *)",
+      "Bash(git -C \"C:/projects/dashboard_frontend\" status)",
+      "Bash(git -C \"C:/projects/dashboard_frontend\" diff)",
+      "Bash(git *)"
+    ]
+  }
+}
