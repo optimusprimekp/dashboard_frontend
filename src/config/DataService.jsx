@@ -88,12 +88,12 @@ api.interceptors.response.use(
         }
         processQueue(new Error("No access token in refresh response"), null);
         sessionStorage.removeItem("token");
-        window.location.hash = "#/";
+        window.location.reload();
         return Promise.reject(error);
       } catch (refreshError) {
         processQueue(refreshError, null);
         sessionStorage.removeItem("token");
-        window.location.hash = "#/";
+        window.location.reload();
         return Promise.reject(refreshError);
       } finally {
         isRefreshing = false;

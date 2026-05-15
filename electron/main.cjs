@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Menu } = require('electron');
 const path = require('path');
 
 const isDev = !app.isPackaged;
@@ -15,7 +15,23 @@ function createWindow() {
       nodeIntegration: false,
     },
     icon: path.join(__dirname, 'icon.png'),
+    autoHideMenuBar: true,
     show: false,
+  });
+
+  win.removeMenu();
+
+  // F5 / Ctrl+R → reload page; F12 / Ctrl+Shift+I → toggle DevTools
+  win.webContents.on('before-input-event', (event, input) => {
+    if (input.type !== 'keyDown') return;
+    if (input.key === 'F5' || (input.control && input.key === 'r')) {
+      win.reload();
+      event.preventDefault();
+    }
+    if (input.key === 'F12' || (input.control && input.shift && input.key === 'I')) {
+      win.webContents.toggleDevTools();
+      event.preventDefault();
+    }
   });
 
   if (isDev) {
@@ -29,6 +45,7 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  Menu.setApplicationMenu(null);
   createWindow();
 
   app.on('activate', () => {
