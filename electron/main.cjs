@@ -14,7 +14,7 @@ function createWindow() {
       contextIsolation: true,
       nodeIntegration: false,
     },
-    icon: path.join(__dirname, '../public/logo-small.png'),
+    icon: path.join(__dirname, 'icon.png'),
     show: false,
   });
 
