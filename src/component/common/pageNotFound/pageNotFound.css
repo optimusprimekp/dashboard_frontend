@@ -1,0 +1,72 @@
+.page-not-found-section {
+      background-image: url(../../../assets/images/png/back-img.jpg);
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 100vh;
+      background-color: black;
+}
+
+.page-not-found-content-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+}
+
+.page-not-found-content-main .page-not-found-title {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 45px;
+      text-align: center;
+      margin-bottom: 15px;
+}
+
+.page-not-found-content-main .page-not-found-btn {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 600;
+      color: var(--secondary-color);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      padding: 15px 20px;
+      color: var(--primary-color);
+      background-color: var(--main-white);
+      min-width: 250px;
+      margin-top: 30px;
+      display: flex;
+      box-shadow: 0px 10px 15px #0000000D;
+      transition: all .3s;
+      text-transform: capitalize;
+}
+
+.page-not-found-content-main .page-not-found-btn:hover {
+      background-color: var(--orange);
+      color: var(--main-white);
+      transform: scale(1.1);
+}
+
+.page-not-found-img {
+      height: 250px;
+      width: 100%;
+      object-fit: contain;
+      margin-bottom: 30px;
+}
+
+.page-right-arrow {
+      height: 15px;
+      width: 15px;
+      object-fit: contain;
+      margin: 0px 0px 0px 15px;
+}
+.page-not-found-content-main .page-404-text{
+      font-size: 150px;
+      color: black;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}

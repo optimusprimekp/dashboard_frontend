@@ -1,0 +1,168 @@
+@media (max-width: 1249px) {}
+
+@media (max-width: 1023px) {
+      .admin-body-overflow {
+            overflow: hidden;
+      }
+
+      .admin-user-list-flex {
+            align-items: flex-start;
+            flex-direction: column;
+      }
+
+      .admin-auth-left-main {
+            display: none;
+      }
+
+      .admin-auth-right-main {
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+      }
+
+      .login-auth-bg {
+            height: 50vh;
+            background-size: cover;
+      }
+
+      .admin-sidebar-logo-main {
+            justify-content: space-between;
+      }
+
+      .admin-header-main.admin-header-deactive .admin-sidebar-logo {
+            display: block;
+            margin-left: 0px;
+      }
+
+      .admin-header-right .admin-header-icon-box {
+            margin-right: 5px;
+      }
+
+      .admin-user-card-row {
+            grid-template-columns: repeat(2, 1fr);
+      }
+
+      .admin-dash-card-row {
+            grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+@media (max-width: 767px) {
+      .admin-admin-dashboard-inner-box {
+            max-width: 100%;
+      }
+
+      .admin-dashboard-content .admin-user-list-page-title {
+            margin-bottom: 10px;
+      }
+
+      .admin-filter-main .MuiDrawer-paper {
+            min-width: 300px;
+            max-width: 300px;
+      }
+
+      .admin-progress-bar-text {
+            right: 0px;
+            top: -23px;
+      }
+
+      .admin-close-icon {
+            height: 23px;
+            width: 23px;
+            object-fit: contain;
+            display: block;
+      }
+
+      .admin-sidebar-logo-main .admin-sidebar-close-btn {
+            display: block;
+      }
+
+      .admin-bergurmenu-icon {
+            height: 20px;
+            object-fit: contain;
+            width: 20px;
+      }
+
+      .admin-header-icon-box {
+            margin-right: 15px;
+      }
+
+      .admin-header-row .admin-bergur-button {
+            padding: 0px;
+            min-width: 37px;
+      }
+
+      .admin-header-sidebar-logo {
+            order: 2;
+      }
+
+      .edit-profile-row {
+            grid-template-columns: repeat(1, 1fr);
+      }
+
+      .user-btn-flex {
+            margin-top: 10px;
+      }
+
+      .admin-dashboard-left-main.admin-sidebar-deactive {
+            left: -290px;
+            max-width: 0px;
+      }
+
+      .admin-header-main.admin-header-deactive {
+            left: 0;
+      }
+
+      .admin-header-main {
+            left: 0px;
+      }
+
+      .admin-sidebar-deactive .admin-sidebar-icons {
+            margin-right: 10px;
+      }
+
+      .admin-sidebar-deactive .admin-sidebar-link-text {
+            display: block;
+      }
+
+      .admin-dashboard-left-main.active {
+            left: 0;
+      }
+
+      .admin-dashboard-containt-main,
+      .admin-header-main.admin-header-deactive+.admin-dashboard-containt-main {
+            padding: 88px 15px 24px 15px;
+      }
+
+      .user-list-flex {
+            display: flex;
+            align-items: self-start;
+            flex-direction: column;
+      }
+
+      .card-img {
+            width: 50px;
+            height: 50px;
+      }
+
+      .admin-card-box .card-user-title {
+            font-size: 15px;
+            line-height: 18px;
+      }
+
+      .card-data-flex {
+            margin: 5px 0px;
+      }
+
+      .admin-user-card-row {
+            grid-template-columns: repeat(1, 1fr);
+      }
+
+      .admin-dash-card-row {
+            grid-template-columns: repeat(1, 1fr);
+      }
+}
+
+@media (max-width: 549px) {}
+
+@media (max-width: 374px) {}

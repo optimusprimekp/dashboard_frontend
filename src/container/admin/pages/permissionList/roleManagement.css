@@ -1,0 +1,43 @@
+.role-permission-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.role-permission-left-main {
+    max-width: 30%;
+    flex: 0 0 30%;
+    width: 100%;
+}
+
+.role-permission-right-main {
+    flex: 1;
+    width: 100%;
+}
+
+.role-permission-check-flex {
+    display: flex;
+}
+
+.role-permission-check-main {
+    max-width: 150px;
+    width: 100%;
+}
+
+.add-permission-section .add-permission-title {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.role-permission-left-main .role-permission-name {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.add-permission-section {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,110 @@
+.site-under-maintenance-page {
+      background-color: #111418;
+      min-height: 100vh;
+      width: 100%;
+      background-image: url(../../../assets/images/png/under-maintanance-bg2.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+}
+
+.maintenance-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      overflow-y: scroll;
+      height: calc(100vh - 50px);
+}
+
+.maintenance-content .maintenance-img {
+      height: 250px;
+      width: 100%;
+      object-fit: contain;
+      margin-bottom: 30px;
+}
+
+.maintenance-content .maintenance-title {
+      font-size: 63px;
+      line-height: 76px;
+      font-weight: 600;
+      color: var(--main-white);
+      margin-bottom: 22px;
+      text-align: center;
+}
+
+.maintenance-content .maintenance-para {
+      font-size: 23px;
+      line-height: 34px;
+      font-weight: 500;
+      color: var(--main-white);
+      margin-bottom: 15px;
+      text-align: center;
+}
+
+.maintenance-content .maintenance-btn {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 600;
+      color: var(--secondary-color);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      padding: 8px 20px;
+      color: var(--primary-color);
+      background-color: var(--main-white);
+      min-width: 250px;
+      margin-top: 50px;
+      display: flex;
+      text-transform: capitalize;
+}
+
+.maintenance-content .maintenance-btn:hover {
+      background-color: var(--orange);
+      color: var(--main-white);
+}
+
+.maintenance-btn:hover .gmail-round-box {
+      background-color: var(--main-white);
+}
+
+.gmail-round-box {
+      background-color: var(--primary-color);
+      height: 50px;
+      width: 100%;
+      max-width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      margin-right: 15px;
+}
+
+.gmail-icon {
+      height: 20px;
+      width: 20px;
+      object-fit: contain;
+}
+
+.right-arrow {
+      height: 15px;
+      width: 15px;
+      object-fit: contain;
+      margin: 0px 15px;
+}
+.maintenance-footer .maintenance-copy-right-text{
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: 500;
+      color: var(--main-white);
+      text-align: center;
+}
+.maintenance-footer{
+      padding: 10px 0px;
+}
